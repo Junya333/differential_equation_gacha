@@ -1,13 +1,46 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="ja">
 
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Differential Equations Gacha</title>
+        <title>微分方程式ガチャ</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+        <script src="js/main.js" defer></script>
     </head>
 
     <body>
+        <h1>微分方程式ガチャ</h1>
+
+        <div class="section" id="range-selection">
+            <h2>出題範囲の選択</h2>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="category" value="一次線形"> 一次線形</label>
+                <label><input type="checkbox" name="category" value="変数分離形"> 変数分離形</label>
+                <label><input type="checkbox" name="category" value="同次形"> 同次形</label>
+                <label><input type="checkbox" name="category" value="未分類"> その他（未分類）</label>
+            </div>
+        </div>
+
+        <div class="section" id="count-selection">
+            <h2>出題数の指定</h2>
+            <input type="number" id="numQuestions" min="1" max="10" value="3">
+        </div>
+
+        <div class="section controls" id="actions">
+            <button id="drawButton" disabled>出題する</button>
+            <button id="showAnswerButton" disabled>回答を見る</button>
+        </div>
+
+        <div class="section" id="problemDisplay">
+            <h2>問題</h2>
+            <div id="questionsContainer"></div>
+        </div>
+
+        <div class="section" id="answerDisplay">
+            <h2>回答</h2>
+            <div id="answersContainer"></div>
+        </div>
     </body>
 
 </html>
