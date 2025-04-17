@@ -26,12 +26,14 @@ function gacha(genres, num) {
 
     }
 
-    for i in Range(max(0, num - genres.length)) {
+    for (let i = 0; i < Math.max(0, num - genres.length); i++) {
         // jsonからジャンルgのものをランダムに取得
+        let randomGenre = genres[Math.floor(Math.random() * genres.length)];
         let randomIndex = Math.floor(Math.random() * json[randomGenre].length);
         let randomItem = json[randomGenre][randomIndex];
         // 取得したものをresultに追加
         result.push(randomItem);
     }
 
+    return result;
 }
