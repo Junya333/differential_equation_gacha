@@ -1,0 +1,28 @@
+{
+  "一次線形": [
+    {
+      "id": "ode001",
+      "question": "\\frac{dy}{dx} + 2y = e^x",
+      "answer": "y = Ce^{-2x} + \\frac{1}{3}e^x"
+    },
+    {
+      "id": "ode002",
+      "question": "\\frac{dy}{dx} - 3y = 0",
+      "answer": "y = Ce^{3x}"
+    }
+  ],
+  "二次線形": [
+    {
+      "id": "ode101",
+      "question": "\\frac{d^2y}{dx^2} - 5\\frac{dy}{dx} + 6y = 0",
+      "answer": "y = C_1 e^{2x} + C_2 e^{3x}"
+    }
+  ],
+  "変数分離形": [
+    {
+      "id": "ode201",
+      "question": "\\frac{dy}{dx} = y \\sin x",
+      "answer": "y = Ce^{-\\cos x}"
+    }
+  ]
+}

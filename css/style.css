@@ -32,3 +32,11 @@ button {
 input[type="number"] {
   width: 5em;
 }
+
+#result p {
+  margin: 1em 0;
+}
+
+#result b {
+  font-size: 2rem;
+}
